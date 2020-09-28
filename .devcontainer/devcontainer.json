@@ -44,7 +44,7 @@
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "dotnet restore",
+	"postCreateCommand": "git config --global user.name 'Test' && git pull",
 
 	// Comment this out to connect as a root instead.
 	"remoteUser": "vscode"
