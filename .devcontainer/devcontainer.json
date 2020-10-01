@@ -17,6 +17,11 @@
 	"settings": {
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
+	
+	"remoteEnv": {
+		"GIT_TOKEN": "cddb6b47ec292e2e6776dd8642160f66e3c08e1e",
+		"GIT_USER": "anpaskin"
+	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
