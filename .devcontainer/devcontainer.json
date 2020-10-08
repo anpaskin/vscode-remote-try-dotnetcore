@@ -18,9 +18,14 @@
 		"terminal.integrated.shell.linux": "/bin/bash"
 	},
 	
+	"containerEnv": {
+		"TEST_CONTAINER": "Test container env",
+		"TEST_CONTAINER_SUB": "Substitute!"
+	}
+	
 	"remoteEnv": {
-		"GIT_TOKEN": "",
-		"GIT_USER": "anpaskin"
+		"TEST_REMOTE": "Test remote env",
+		"TEST_REMOTE_SUB": "${containerEnv:TEST_CONTAINER_SUB}"
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
