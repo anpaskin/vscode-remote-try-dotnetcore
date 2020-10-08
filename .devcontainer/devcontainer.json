@@ -21,7 +21,7 @@
 	"containerEnv": {
 		"TEST_CONTAINER": "Test container env",
 		"TEST_CONTAINER_SUB": "Substitute!"
-	}
+	},
 	
 	"remoteEnv": {
 		"TEST_REMOTE": "Test remote env",
