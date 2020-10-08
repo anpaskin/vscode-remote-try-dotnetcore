@@ -22,11 +22,6 @@
 		"TEST_CONTAINER": "Test container env",
 		"TEST_CONTAINER_SUB": "Substitute!"
 	},
-	
-	"remoteEnv": {
-		"TEST_REMOTE": "Test remote env",
-		"TEST_REMOTE_SUB": "${containerEnv:TEST_CONTAINER_SUB}"
-	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
@@ -48,9 +43,12 @@
 	"mounts": [
 		// "source=${env:HOME}${env:USERPROFILE}/.aspnet/https,target=/home/vscode/.aspnet/https,type=bind"
 	],
+	
 	"remoteEnv": {
 		// "ASPNETCORE_Kestrel__Certificates__Default__Password": "SecurePwdGoesHere",
 		// "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx",
+		"TEST_REMOTE": "Test remote env",
+		"TEST_REMOTE_SUB": "${containerEnv:TEST_CONTAINER_SUB}"
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
