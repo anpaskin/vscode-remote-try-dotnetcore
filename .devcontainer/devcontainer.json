@@ -48,7 +48,7 @@
 		// "ASPNETCORE_Kestrel__Certificates__Default__Password": "SecurePwdGoesHere",
 		// "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx",
 		"TEST_REMOTE": "Test remote env",
-		"TEST_REMOTE_SUB": "${containerEnv:TEST_CONTAINER_SUB}"
+		"TEST_REMOTE_SUB": "${containerEnv:TEST_CONTAINER_SUB}",
 		"TEST_PATH": "${localenv:PATH}",
 		"TEST_PATH_CASE": "${localEnv:PATH}"
 	},
